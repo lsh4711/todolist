@@ -18,7 +18,8 @@ public class Entity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
+
 	private String title;
-	private int todoOrder;
-	private boolean completed;
+	private Integer todoOrder;
+	private Boolean completed;
 }

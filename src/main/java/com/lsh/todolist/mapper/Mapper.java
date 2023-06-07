@@ -5,5 +5,8 @@ import com.lsh.todolist.entity.Entity;
 
 @org.mapstruct.Mapper(componentModel = "spring")
 public interface Mapper {
-	Entity dtoToEntity(Dto dto);
+	Entity postDtoToEntity(Dto.Post postDto);
+
+	Entity patchDtoToEntity(Dto.Patch patchDto);
+
 }
